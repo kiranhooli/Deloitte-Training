@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+}
+.logo{
+    margin-top: -30px;
+    margin-left: 40px;
+}
+
+.box{
+    box-shadow: 0 0 30px #000;
+    border-radius: 10px;
+    margin: 30px 0px 0px 30px;
+    transition: transform .6s;
+    min-height: 400px;
+}
+.box:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    box-shadow: 0 0 30px #fff;
+}
+.head-text{
+    font-weight: 600;
+    color: #86bc24;
+}
+.text{
+    font-weight: 500;
+    padding: 16px 20px;
+}
+@media only screen and (max-width: 770px) {
+    .logo{
+        display: none;
+    }
+    .main-logo{
+        width:120px;
+        height: 25px;
+    }
+  }
