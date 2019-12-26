@@ -1,7 +1,6 @@
 *{
     margin:0;
-    padding:0;
-    
+    padding:0;   
 }
 html, body {
     max-width: 100%;
@@ -21,7 +20,7 @@ body{
     border-radius: 10px;
     margin: 30px 0px 0px 30px;
     transition: transform .6s;
-    min-height: 400px;
+    min-height: 500px;
 }
 .box:hover{
     transform: scale(1.1);

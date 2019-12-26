@@ -28,12 +28,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(166,177,201,1) 35%, r
             <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="FirstName LastName">
           </div>
           <div class="form-group ">
+            <label for="exampleFormControlInput6">Password</label>
+            <input type="password" pattern="[A-Z]{1}[A-Za-z0-9*#$&@]{7,}" class="form-control" id="exampleFormControlInput6" placeholder="Password">
+          </div>
+          <div class="form-group ">
             <label for="exampleFormControlInput2">Mobile Number</label>
-            <input type="number" class="form-control" id="exampleFormControlInput2" placeholder="Mobile Number">
+            <input type="text" pattern="[6-9]{1}[0-9]{9}" class="form-control" id="exampleFormControlInput2" placeholder="Mobile Number">
           </div>
         <div class="form-group ">
           <label for="exampleFormControlInput3">Email Address</label>
-          <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
+          <input type="text" pattern="[a-zA-Z0-9._]+[@]{1}[a-zA-Z0-9]+(.com|.co.in|.in)" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com">
         </div>
 
         <label for="">Gender</label>
