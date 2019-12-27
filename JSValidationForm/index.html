@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .m-1{
+            margin:10px;
+        }
+    </style>
+    <title>Form</title>
+</head>
+<body>
+    <form action="http://github.com" onsubmit="return Validate()">
+        <div class="row m-1">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 bg-info">
+                <h2 class="text-center m-1">Registration Form</h2><br>
+                <div class="row m-1">
+                    <div class="col-md-6 text-right"><b>First Name</b></div>
+                    <div class="col-md-6"><input type="text" name="" id="fName"><i style="color:red; font-size:10px" class="errMSG" id="fNameErr"></i></div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-md-6 text-right"><b>Last Name</b></div>
+                    <div class="col-md-6"><input type="text" name="" id="lName"><i style="color:red; font-size:10px" class="errMSG" id="lNameErr"></i></div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-md-6 text-right"><b>Mobile Number</b></div>
+                    <div class="col-md-6"><input type="text" name="" id="mobile"><i style="color:red; font-size:10px" class="errMSG" id="mobileErr"></i></div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-md-6 text-right"><b>Email Address</b></div>
+                    <div class="col-md-6"><input type="text" name="" id="email"><i style="color:red; font-size:10px" class="errMSG" id="emailErr"></i></div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-md-6 text-right"><b>Gender</b></div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12"><input type="radio" name="G" id="male"><b> Male</b></div>
+                            <div class="col-md-12"><input type="radio" name="G" id="female"><b> Female</b><br><i style="color:red; font-size:10px" class="errMSG" id="GErr"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-md-6 text-right"><b>Languages Known</b></div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12"><input type="checkbox" name="l" id="KA"><b> Kannada</b></div>
+                            <div class="col-md-12"><input type="checkbox" name="l" id="EN"><b> English</b></div>
+                            <div class="col-md-12"><input type="checkbox" name="l" id="HN"><b> Hindi</b></div>
+                            <div class="col-md-12"><input type="checkbox" name="l" id="TM"><b> Tamil</b><br><i style="color:red; font-size:10px" class="errMSG" id="langErr"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-md-6 text-right"><b>State</b></div>
+                    <div class="col-md-6">
+                        <select name="" id="state">
+                            <option value="NONE">Select State</option>
+                            <option value="KAR">Karnataka</option>
+                            <option value="MHA">Maharashtra</option>
+                            <option value="TAM">Tamil Nadu</option>
+                            <option value="APD">Andhra Pradesh</option>
+                        </select>
+                        <br><i style="color:red; font-size:10px" class="errMSG" id="stateErr"></i>
+                    </div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-md-6 text-right"><b>About</b></div>
+                    <div class="col-md-6"><textarea name="" id="" cols="20" rows="4"></textarea></div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-md-6 text-right"><b>Upload Resume</b></div>
+                    <div class="col-md-6"><input type="file" name="" id="resume"></div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-md-5 text-right m-1"><input class="btn btn-md btn-success" type="submit" name="" id=""></div>
+                    <div class="col-md-5 text-left m-1"><input class="btn btn-md btn-info" type="reset" name="" id=""></div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>
