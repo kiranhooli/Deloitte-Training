@@ -1,14 +1,14 @@
 package com.deloitte.itcinema.model;
 
-import java.util.ArrayList;
-
 public class Movie {
 	private int movieId;
 	private String movieName;
-	private double movierating;
-	private ArrayList<String> availableSeats;
+	private String movieRating;
+	private int availableSeats;
 	private int totalSeats;
 	private String posterURL;
+	
+	
 	
 	public int getMovieId() {
 		return movieId;
@@ -22,16 +22,16 @@ public class Movie {
 	public void setMovieName(String movieName) {
 		this.movieName = movieName;
 	}
-	public double getMovierating() {
-		return movierating;
+	public String getMovieRating() {
+		return movieRating;
 	}
-	public void setMovierating(double movierating) {
-		this.movierating = movierating;
+	public void setMovieRating(String movieRating) {
+		this.movieRating = movieRating;
 	}
-	public ArrayList<String> getAvailableSeats() {
+	public int getAvailableSeats() {
 		return availableSeats;
 	}
-	public void setAvailableSeats(ArrayList<String> availableSeats) {
+	public void setAvailableSeats(int availableSeats) {
 		this.availableSeats = availableSeats;
 	}
 	public int getTotalSeats() {
